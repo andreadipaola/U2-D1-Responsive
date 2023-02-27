@@ -222,15 +222,15 @@ footer a {
 }
 
 @media screen and (min-width: 769px) {
-    header {
-        position: relative;
-    }
+  header {
+    position: relative;
+  }
   header div img {
     width: 150px;
     position: absolute;
     top: 50%;
-    left:0;
-    transform: translate(0,-50%);
+    left: 0;
+    transform: translate(0, -50%);
     margin-left: 20px;
     padding-block: 10px;
   }
@@ -245,8 +245,8 @@ footer a {
     vertical-align: middle;
     position: absolute;
     top: 50%;
-    right:0;
-    transform: translate(0,-50%);
+    right: 0;
+    transform: translate(0, -50%);
     margin-right: 30px;
   }
 
@@ -254,19 +254,32 @@ footer a {
     width: 70%;
   }
   iframe {
-    display: inline-block;
-  }
-  section,
-  aside div {
-    display: inline-block;
+    height: 162px;
   }
   iframe,
   section {
     border-radius: 10px;
+    width: 49.8%;
+    display: inline-block;
+    vertical-align: middle;
   }
-
   aside div {
+    display: inline-block;
     margin-inline: -2px;
-    width: 33.45%;
+    width: 33.4%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  iframe {
+    height: 142px;
+  }
+}
+@media print {
+  header,
+  iframe,
+  section,
+  aside,
+  footer {
+    display: none;
   }
 }
